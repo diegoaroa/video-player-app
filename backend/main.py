@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-VIDEO_ROOT_DIR = "/mnt/ml_data/media"
+VIDEO_ROOT_DIR = os.getenv("VIDEO_ROOT_DIR", "/mnt/storage/media")
 FRONTEND_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "frontend")
 
 # Natural sorting helper
