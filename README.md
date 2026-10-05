@@ -20,3 +20,6 @@ uvicorn main:app --reload --port 8000
 
 ### 2. Frontend
 Access the frontend by navigating to `http://localhost:8000` in your web browser.
+
+### 3. Features
+
