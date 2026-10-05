@@ -15,11 +15,12 @@ cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install fastapi uvicorn
-uvicorn main:app --reload --port 8000
+python main.py
+# or: uvicorn main:app --reload --port 8008
 ```
 
 ### 2. Frontend
-Access the frontend by navigating to `http://localhost:8000` in your web browser.
+Access the frontend by navigating to `http://localhost:8008` in your web browser.
 
 ### 3. Features
 

@@ -112,3 +112,9 @@ else:
     @app.get("/")
     def read_root():
         return {"message": "Video player API is running. Please set up the frontend folder."}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8008))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
